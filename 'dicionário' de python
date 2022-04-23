@@ -1,0 +1,54 @@
+Funções usuais em python:
+==========================
+input(): Entrada;
+print(): saída;
+int(): Passa todo o conteúdo dentro da função para o 'tipo' inteiro;
+str(): Passa todo o conteúdo dentro da função para o 'tipo' string;
+float(): Passa todo o conteúdo dentro da função para o 'tipo' ponto flutuante (real);
+
+- // -
+
+len(): Retorna o tamanho da cadeia de conteúdo dentro da função (basicamente, o tamanho da 'string')
+	Lembre-se, 'len' vem de 'lengh' que significa comprimento!
+	Também pode ser usado para retornar o tamanho de uma lista!
+
+sorted(): Retorna o conteúdo dentro da função ordenando em ordem alfanúmerica.
+	Possui algums parâmetros: sorted(lista, key=function, reverse=boorleano)
+	O primeiro é padrão, seria a lista a ser ordenada.
+	key: é o parâmetro de ordenação, por padrão a ordem é alfabética, mas pode-se usar outras funções como parâmetro de ordenação.
+	reverse: Parâmetro do tipo boorleano (verdadeiro ou falso) que indica se a lista será ou não invertida, por padrao é falso!
+
+===========================
+
+Propriedades usuais em python
+	Lembre-se, propriedades são funções nativas que são chamadas para alterar valores ou como métodos que extrai valores de um objeto.
+	São chamadas da seguinte forma: 'exemplo.funcao()'
+===========================
+strip(): Remove os caracteres de espaço de um tipo string
+	lstrip(): Mesmo que o anterior, porém, só remove os espaços a ESQUERDA (Left, por isso o l);
+	rstrip(): Mesmo que o anterior, porém, só remove os espaços a DIREITA (Right, por isso o r);
+split(): Separa frases de uma string como elementos de uma lista; 
+	É usado para retornar um valor, então você precisa armazenar isso em algum lugar!
+count(): Retorna o número de vezes que um caractere aparece em uma string, tem um parâmetro que é o caractere de busca;
+	Assim: 'string.count(t)' ---> Dessa forma ele vai contar quantos 't' tem na string
+replace(): Substitui uma palavra por outra em uma string, possui dois paramêtros, a palavra a ser substituida e a que vai tomar seu lugar;
+	Assim: string.replace('nao', 'nop') ----> Está substituindo 'nao' por 'nop'
+find(): Encontra um item de busca e retorna sua posição(onde começa);
+	Assim: string.find("exemplo") ----> Procura onde a palavra 'exemplo' começa na string.
+upper(): Muda o valor da string para todos os caracteres em caixa alta;
+lower(): Muda o valor da string para todos os caracteres em minúsculo;	
+		
+- // -
+
+sort(): Altera o conteúdo de uma lista, colocando-a em ordem alfanumérica; em parâmetros igual a função embutida 'sorted()';
+reverse(): Inverte a ordem de uma lista;
+
+
+
+
+===========================
+
+
+	
+
+
