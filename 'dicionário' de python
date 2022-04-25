@@ -48,7 +48,42 @@ reverse(): Inverte a ordem de uma lista;
 
 ===========================
 
+Estruturas python
 
+---- Estrutura e condição if ----
+É um pouco diferente da estrutura usual em blocos que estamos acostumados. Em python, if tem a seguinte forma:
+	if condição :
+	   #linhas de códigos
+
+É possível nota que ainda continua simples, basta observar que python usa o sistema identado, após os dois pontos, tudo oq estiver vinculado a ele
+será executado, caso a condição seja verdadeira.
+If e else segue o mesmo raciocínio, assim:
+	if condição :
+	   #linhas de códigos
+	else:
+	   #linhas de códigos
+
+Basicamente isso, caso a condição seja verdadeira, executa o que tem dentro do if, caso contrário, executa o que está vinculado ao else.
+Obs.: Apesar dos dois serem usados em sequência, tem que tomar cuidado pro else não ficar vinculado com o if, ou seja, if e else precisam estar com o mesmo tanto de recuo. O exemplo a seguir está INCORRETO:
+	if condição:
+	   #linhas de código
+	   else:               <------------ está identado ao if, precisava ter o mesmo recuo, ou seja, if e else precisam estar ALINHADOS
+	   #linhas de código   <------------ Não está identado ao else, logo nãp funcionaria, precisa estar com um recuo a mais em relação ao else ou na mesma linha logo após os dois pontos (':').
+	   
+Imagino que vocês devem lembrar do famigerado "else if" em LOP ou outras linguagens de programação, ele serve para aninhar de forma prática várias condições, aqui existe um estrutura própria pra isso que fica entre o if e o else, chama-se 'elif', basta usar como se fossem outras confições, semelhante ao exemplo correto de if e else. Assim:
+
+-Versão .py                                -Versão .js
+	if condição:                    |      if(condição) {
+	   #linhas de código            |        //linhas de código
+	elif condição2:                 |      } else if(condição2) {
+	   #linhas de código            |        // linhas de código
+	elif condição3:                 |      } else if(condição3) {
+	   #linhas de código            |        //linhas de código
+	else:                           |      } else {
+	   #linhas de código            |         //Linhas de código
+                                        |      }
+---------------------------------------------------------------------------------------------------
+===========================
 	
 
 
