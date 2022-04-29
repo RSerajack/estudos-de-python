@@ -64,13 +64,17 @@ If e else segue o mesmo raciocínio, assim:
 	   #linhas de códigos
 
 Basicamente isso, caso a condição seja verdadeira, executa o que tem dentro do if, caso contrário, executa o que está vinculado ao else.
-Obs.: Apesar dos dois serem usados em sequência, tem que tomar cuidado pro else não ficar vinculado com o if, ou seja, if e else precisam estar com o mesmo tanto de recuo. O exemplo a seguir está INCORRETO:
+Obs.: Apesar dos dois serem usados em sequência, tem que tomar cuidado pro else não ficar vinculado com o if, ou seja, if e else precisam estar com o mesmo 
+tanto de recuo. O exemplo a seguir está INCORRETO:
 	if condição:
 	   #linhas de código
 	   else:               <------------ está identado ao if, precisava ter o mesmo recuo, ou seja, if e else precisam estar ALINHADOS
-	   #linhas de código   <------------ Não está identado ao else, logo nãp funcionaria, precisa estar com um recuo a mais em relação ao else ou na mesma linha logo após os dois pontos (':').
+	   #linhas de código   <------------ Não está identado ao else, logo nãp funcionaria, precisa estar com um recuo a mais em relação ao else ou na 
+	   mesma linha logo após os dois pontos ':'.
 	   
-Imagino que vocês devem lembrar do famigerado "else if" em LOP ou outras linguagens de programação, ele serve para aninhar de forma prática várias condições, aqui existe um estrutura própria pra isso que fica entre o if e o else, chama-se 'elif', basta usar como se fossem outras confições, semelhante ao exemplo correto de if e else. Assim:
+Imagino que vocês devem lembrar do famigerado "else if" em LOP ou outras linguagens de programação, ele serve para aninhar de forma prática várias condições, 
+aqui existe um estrutura própria pra isso que fica entre o if e o else, chama-se 'elif', basta usar como se fossem outras confições, semelhante ao exemplo 
+correto de if e else. Assim:
 
 -Versão .py                                -Versão .js
 	if condição:                    |      if(condição) {
@@ -82,6 +86,35 @@ Imagino que vocês devem lembrar do famigerado "else if" em LOP ou outras lingua
 	else:                           |      } else {
 	   #linhas de código            |         //Linhas de código
                                         |      }
+					
+
+É possível ter situações em que um fator depende de mais de uma condição ao mesmo tempo, nesses casos, usamos o operador 'and' (e), dessa forma:
+	if condição1 and condição2:
+	   #código
+	Dessa forma, o código identado ao if só acontece se ambas, condição1 e condição2, forem verdadeiras.
+
+Da mesma forma, é possível ter condicionais que podem depender de mais de um condição, mas que não necessáriamente todas elas, nesses momentos usamos o 
+operador 'or' (ou). Assim:
+	if condição1 or condição2:
+	   #código
+	Nesse caso, o código identado ao if só irá acontecer se ou a condição1 ou a condição2 forem verdadeiras.
+
+Agora, no caso de você ter alguma condição que simplesmente não faz nada, mas que é importante definir que ela realmente não faz nada, é possível declarar
+isso usando o 'pass', dessa forma:
+	if condição:
+	   pass
+
+
+Também é possível usar if em listas, um bom exemplo é verificar se um determinado valor existe em uma lista:
+	if elemento in lista_exemplo:
+	   #código
+	//Usano o operador 'in', é possível verificar se o valor 'elemento' existe em 'lista_exemplo'.
+	
+Também é possível ter o efeito contrário, ou seja, de um valor não estar na lista. Basta negar sua existência usanod o 'not':
+	if elemento not in lista_exemplo:
+	   #código
+	//Se o valor 'elemento' não estiver presente em 'lista_exemplo', o código dentro do if é executado.
+	
 ---------------------------------------------------------------------------------------------------
 ===========================
 	
