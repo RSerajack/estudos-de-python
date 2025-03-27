@@ -110,7 +110,7 @@ Também é possível usar if em listas, um bom exemplo é verificar se um determ
 	   #código
 	//Usano o operador 'in', é possível verificar se o valor 'elemento' existe em 'lista_exemplo'.
 	
-Também é possível ter o efeito contrário, ou seja, de um valor não estar na lista. Basta negar sua existência usanod o 'not':
+Também é possível ter o efeito contrário, ou seja, de um valor não estar na lista. Basta negar sua existência usando o 'not':
 	if elemento not in lista_exemplo:
 	   #código
 	//Se o valor 'elemento' não estiver presente em 'lista_exemplo', o código dentro do if é executado.
